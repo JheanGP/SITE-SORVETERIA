@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>SORVETERIA 3 IRMÃOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="imagens/LOGO.jpeg" style="border-radius: 50%;">
+            </a>
+
+            <nav class="navbar">
+                <a href="#">HOME</a>
+                <a href="#SOBRE">SOBRE</a>
+                <a href="#MENU">MENU</a>
+                <a href="#AVALIAÇÕES">AVALIAÇÕES</a>
+                <a href="#ENDEREÇO">ENDEREÇO</a>
+                <a href="#CONTATO">CONTATO</a>
+                <a href="#CARRINHO">CARRINHO</a>
+            </nav>
+
+            <div class="icones">
+                <img width="30" height="30" src="https://img.icons8.com/ios/30/ffffff/search--v4.png"
+                    alt="search--v4" />
+                <a href="#CARRINHO" class="icone-carrinho">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/30/ffffff/shopping-cart--v2.png"
+                        alt="shopping-cart--v2" />
+                    <span id="contador-carrinho">0</span>
+                </a>
+                <button type="button" id="botao-tema" class="botao-tema" aria-label="Ativar modo escuro"
+                    title="Alternar modo claro e escuro">
+                    <span id="icone-tema">☾</span>
+                </button>
+                <button type="button" id="botao-menu" class="botao-menu" aria-label="Abrir 
+                menu">☰</button>
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="imagem-sorvete">
+                <img src="imagens/SORVETE NA TAÇA.jpg" style="border-radius: 5%;">
+            </div>
+            <div class="content">
+                <h3> A SORVETERIA 3 IRMÃOS TEM OS MELHORES SORVETES DA REGIÃO</h3>
+                <p>A Sorveteria Três Irmãos é sinônimo de sabor qualidade e carinho. Todos os sorvetes são
+                    preparados
+                    com ingredientes selecionados muita fruta de verdade e receitas que passam de geração em
+                    geração.
+                    Temos os clássicos que todo mundo ama e também sabores especiais que surpreendem sempre
+                    fresquinhos
+                    e feitos com muito amor. Venha provar e entender por que é a preferência de toda a família</p>
+                <a href="#" class="btn">GARANTA O SEU PARA VOCÊ SE REFRESCAR</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="SOBRE" id="SOBRE">
+        <h2 class="title"> SOBRE <span> NÓS </span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="imagens/SORVETE NA CASQUINHA.jpg" style="border-radius: 5%;">
+            </div>
+            <div class="content">
+                <h3>A RAZÃO DOS NOSSOS SORVETES SEREM DELICOSOS</h3>
+                <p>Preparamos cada sabor com dedicação e cuidado em cada detalhe. Valorizamos fornecedores de confiança,
+                    receitas bem cuidadas e o carinho que faz toda a diferença. O resultado é um sorvete saboroso e
+                    especial, feito para trazer alegria em cada momento.</p>
+                <p>Cada sorvete é criado com paixão e atenção aos pequenos detalhes. Escolhemos os melhores ingredientes
+                    e seguimos processos que preservam todo o sabor natural. Assim, entregamos um produto autêntico,
+                    feito para momentos felizes e compartilhados com quem você gosta.</p>
+                <a href="#" class="btn">SAIBA MAIS</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="MENU" id="MENU">
+        <h2 class="title"> NOSSO <span> MENU </span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="imagens/PICOLE.jpg" style="border-radius: 50%;">
+                <h3>PICOLÉ</h3>
+                <div class="price">R$ 1,99 <span> R$ 4,00</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+            <div class="box">
+                <img src="imagens/CASQUINHA.jpg" style="border-radius: 50%;">
+                <h3>CASQUINHA</h3>
+                <div class="price">R$ 2,99 <span> R$ 4,50</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+            <div class="box">
+                <img src="imagens/MORANGO.jpg" style="border-radius: 50%;">
+                <h3>SORVETE DE MORANGO</h3>
+                <div class="price">R$ 6,99 <span> R$ 10,00</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+            <div class="box">
+                <img src="imagens/CHOCOLATE.jpg" style="border-radius: 50%;">
+                <h3>SORVETE DE CHOCOLATE</h3>
+                <div class="price">R$ 6,99 <span> R$ 10,00</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+            <div class="box">
+                <img src="imagens/FLOCOS.jpg" style="border-radius: 50%;">
+                <h3>SORVETE DE FLOCOS</h3>
+                <div class="price">R$ 6,99 <span> R$ 10,00</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+            <div class="box">
+                <img src="imagens/NAPOLITANO.jpg" style="border-radius: 50%;">
+                <h3>SORVETE DE NAPOLITANO</h3>
+                <div class="price">R$ 6,99 <span> R$ 10,00</span></div>
+                <button type="button" class="btn" onclick="adicionarAoCarrinho(event)">
+                    ADICIONE AO CARRINHO
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="AVALIAÇÕES" id="AVALIAÇÕES">
+        <h2 class="title"> NOSSOS <span> CLIENTES </span></h2>
+
+        <div class="box-container" alt="COMENTÁRIO">
+            <div class="box">
+                <p>Sorvete simplesmente maravilhoso Cremoso demais sabor natural e não fica aquele açúcar excessivo Já
+                    virei cliente fiel</p>
+                <img src="imagens/JOÃO.jpg" style="border-radius: 50%;">
+                <h3> JOÃO </h3>
+                <div class="stars"></div>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                    alt="star-half-empty" />
+            </div>
+            <div class="box">
+                <p>Sabor impressionante parece a fruta mesmo sem aquela doçura artificial logo o preço é justo
+                    pela qualidade entregam sempre no horário combinado</p>
+                <img src="imagens/MARIA.jpg" style="border-radius: 50%;">
+                <h3> MARIA </h3>
+                <div class="stars"></div>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+
+            </div>
+            <div class="box">
+                <p>Recomendo para todo mundo experimentar é o melhor da região sem dúvida nenhuma sempre sai satisfeito
+                    volto
+                    mais vezes com certeza</p>
+                <img src="imagens/PEDRO.jpg" style="border-radius: 50%;">
+                <h3> PEDRO </h3>
+                <div class="stars"></div>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                    alt="star--v1" />
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                    alt="star-half-empty" />
+            </div>
+        </div>
+    </section>
+
+    <section class="ENDEREÇO" id="ENDEREÇO">
+        <h2 class="title"> NOSSO <span> ENDEREÇO </span></h2>
+        <p class="texto-secao">Nós estamos localizados no BANGU SHOPPING ao lado da LOJAS AMERICANAS</p>
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.939753588438!2d-43.469161823779146!3d-22.878683836869005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdff2a1bed6f3%3A0x5ecb9488f615e5a2!2sBangu%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1791759369703!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <section class="CONTATO" id="CONTATO">
+        <h2 class="title"> NOSSO <span> CONTATO </span></h2>
+        <p class="texto-secao">Entre em contato com a gente através do nosso Whats-App - (21) 99522-3296 / através do
+            nosso E-mail - sorveteria3imaos@gmail.com</p>
+        <p class="texto-secao">Siga a gente em nossas redes socias: instagram - @sorveteria_3imaos / facebook -
+            @sorveteria_3imaos / X(twitter) - @sorveteria_3imaos</p>
+        <div class="compartilhar">
+            <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/whatsapp.png" 
+                alt="whatsapp"/>
+            <img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/50/email-open.png"
+                alt="email-open" />
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png"
+                alt="instagram-new--v1" />
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook--v1.png"
+                alt="facebook--v1" />
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png"
+                alt="twitterx--v1" />
+        </div>
+    </section>
+
+    <section class="CARRINHO" id="CARRINHO">
+        <div class="carrinho-cabecalho">
+            <h2> SEU <span> CARRINHO </span></h2>
+            <p>Seus sorvetes favoritos estão aqui!</p>
+        </div>
+
+        <div class="carrinho-tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>PRODUTO</th>
+                        <th>PREÇO</th>
+                        <th>QUANTIDADE</th>
+                        <th>SUBTOTAL</th>
+                    </tr>
+                </thead>
+
+                <tbody id="itens-carrinho">
+                    <tr>
+                        <td colspan="4" class="carrinho-vazio">
+                            Seu carrinho está vazio!
+                            <br>
+                            Escolha seus sorvetes favoritos no menu.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="carrinho-resumo">
+            <div class="carrinho-total">
+                <span>Total do pedido</span>
+                <strong id="valor-total">R$ 0,00</strong>
+            </div>
+
+            <button class="botao-continuar" type="button" onclick="location.href='#MENU'">
+                Escolher mais sorvetes
+            </button>
+
+            <button class="botao-excluir" type="button" onclick="excluirCarrinho()">
+                Excluir carrinho
+            </button>
+
+            <button class="botao-finalizar" type="button" onclick="finalizarPedido()">
+                Finalizar pedido
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - SORVETERIA 3 IRMÃOS. TODOS OS DIREITOS RESERVADOS.</p>
+    </footer>
+    <script>
+        const precosSorvetes = {
+            "PICOLÉ": 1.99,
+            "CASQUINHA": 2.99,
+            "SORVETE DE MORANGO": 6.99,
+            "SORVETE DE CHOCOLATE": 6.99,
+            "SORVETE DE FLOCOS": 6.99,
+            "SORVETE DE NAPOLITANO": 6.99
+        };
+        function adicionarAoCarrinho(event) {
+
+            const produto = event.target.closest(".box");
+            const nome = produto.querySelector("h3").textContent.trim();
+
+            const preco = precosSorvetes[nome];
+
+            const tabela = document.getElementById("itens-carrinho");
+            if (!tabela) {
+                alert("Não foi encontrada a tabela do carrinho.");
+                return;
+            }
+
+            const mensagemVazia = tabela.querySelector(".carrinho-vazio");
+
+            if (mensagemVazia) {
+                mensagemVazia.closest("tr").remove();
+            }
+
+            const linhaExistente = Array.from(
+                tabela.querySelectorAll("tr[data-nome]")
+            ).find(linha => linha.dataset.nome === nome);
+
+            if (linhaExistente) {
+                const quantidade = linhaExistente.querySelector(".quantidade");
+                quantidade.textContent = Number(quantidade.textContent) + 1;
+
+                const subtotal = linhaExistente.querySelector(".subtotal");
+                subtotal.textContent = formatarPreco(
+                    preco * Number(quantidade.textContent)
+                );
+            } else {
+                const linha = document.createElement("tr");
+
+                linha.dataset.nome = nome;
+                linha.dataset.preco = preco;
+
+                linha.innerHTML = `
+            <td>${nome}</td>
+            <td>${formatarPreco(preco)}</td>
+            <td class="quantidade">1</td>
+            <td class="subtotal">${formatarPreco(preco)}</td>
+        `;
+
+                tabela.appendChild(linha);
+            }
+
+            atualizarTotal();
+        }
+
+        function formatarPreco(valor) {
+            return valor.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+        }
+
+        function atualizarTotal() {
+            const tabela = document.getElementById("itens-carrinho");
+            let total = 0;
+
+            tabela.querySelectorAll("tr[data-nome]").forEach(linha => {
+                const preco = Number(linha.dataset.preco);
+                const quantidade = Number(
+                    linha.querySelector(".quantidade").textContent
+                );
+
+                total += preco * quantidade;
+            });
+
+            document.getElementById("valor-total").textContent =
+                formatarPreco(total);
+
+            atualizarContadorCarrinho();
+        }
+
+        function excluirCarrinho() {
+            const tabela = document.getElementById("itens-carrinho");
+
+            atualizarContadorCarrinho();
+
+            tabela.innerHTML = "";
+
+            const linhaVazia = document.createElement("tr");
+
+            linhaVazia.innerHTML = `
+        <td colspan="4" class="carrinho-vazio">
+            Seu carrinho está vazio!
+            <br>
+            Escolha seus sorvetes favoritos no menu.
+        </td>
+    `;
+
+            tabela.appendChild(linhaVazia);
+
+            document.getElementById("valor-total").textContent = "R$ 0,00";
+
+            const contador = document.getElementById("contador-carrinho");
+
+            if (contador) {
+                contador.textContent = "0";
+                contador.style.display = "none";
+            }
+        }
+
+        function finalizarPedido() {
+            const tabela = document.getElementById("itens-carrinho");
+            const produtos = tabela.querySelectorAll("tr[data-nome]");
+
+            if (produtos.length === 0) {
+                alert("Seu carrinho está vazio! Adicione produtos antes de finalizar.");
+                return;
+            }
+
+            alert("Pedido finalizado com sucesso!");
+
+            excluirCarrinho();
+        }
+
+        function atualizarContadorCarrinho() {
+            const contador = document.getElementById("contador-carrinho");
+            const tabela = document.getElementById("itens-carrinho");
+
+            if (!contador || !tabela) return;
+
+            let quantidadeTotal = 0;
+
+            tabela.querySelectorAll("tr[data-nome]").forEach(linha => {
+                const quantidade = Number(
+                    linha.querySelector(".quantidade")?.textContent || 1
+                );
+
+                quantidadeTotal += quantidade;
+            });
+
+            contador.textContent = quantidadeTotal;
+            contador.style.display = quantidadeTotal > 0 ? "flex" : "none";
+        }
+
+        // BOTÃO DE MODO CLARO E ESCURO
+        const botaoTema = document.getElementById("botao-tema");
+        const iconeTema = document.getElementById("icone-tema");
+
+        // Recuperar o tema salvo ou iniciar no modo claro
+        const temaSalvo = localStorage.getItem("tema");
+
+        if (temaSalvo === "escuro") {
+            document.body.classList.add("dark-mode");
+        }
+
+        function atualizarBotaoTema() {
+            const modoEscuro = document.body.classList.contains("dark-mode");
+
+            iconeTema.textContent = modoEscuro ? "☀" : "☾";
+
+            botaoTema.setAttribute(
+                "aria-label",
+                modoEscuro ? "Ativar modo claro" : "Ativar modo escuro"
+            );
+        }
+
+        atualizarBotaoTema();
+
+        // Alternar os temas ao clicar
+        botaoTema.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            const modoEscuro = document.body.classList.contains("dark-mode");
+
+            localStorage.setItem(
+                "tema",
+                modoEscuro ? "escuro" : "claro"
+            );
+
+            atualizarBotaoTema();
+        });
+
+        // MENU SORVETERIA (celular e tablet) 
+        const botaoMenu = document.getElementById("botao-menu");
+        const navbar = document.querySelector(".navbar");
+
+        botaoMenu.addEventListener("click", function () {
+            const aberto = navbar.classList.toggle("ativo");
+            botaoMenu.textContent = aberto ? "✕" : "☰";
+        });
+
+        navbar.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", function () {
+                navbar.classList.remove("ativo");
+                botaoMenu.textContent = "☰";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
